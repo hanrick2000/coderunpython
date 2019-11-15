@@ -1,0 +1,1 @@
+val numbers = sc.parallelize(List(7, 8, 9, 10, 12)).map(x => if (x %2 == 0) 1 else -1).reduce ((x, y) => x + y)
